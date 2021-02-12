@@ -1,0 +1,17 @@
+extends ../templates/template.pug
+
+block content 
+    include ../partials/data.pug
+    .container
+        table.table.table-striped
+            thead
+                tr
+                    th #
+                    th Usuario
+            tbody
+                each p, i in personas
+                    tr
+                        th= i+1
+                        td= p   
+
+

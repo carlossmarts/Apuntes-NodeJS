@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Document</title>
+  </head>
+</html>
+<body>
+  <div class="container ddd">
+    <h4>formulario bootstrap</h4>
+    <form action="#">
+      <h4>inputs</h4>
+      <div class="form-group">
+        <label for="nombre">nombre</label>
+        <input class="form-control" id="nombre" type="text" name="nombre">
+      </div>
+      <div class="form-group">
+        <label for="pass">contraseña</label>
+        <input class="form-control" id="pass" type="password" name="pass">
+      </div>
+      <button class="btn btn-primary" type="submit">ingresar</button>
+      <!--textarea-->
+      <h4>textarea bootstrap</h4>
+      <div class="form-group">
+        <label for="msg">deje su mensaje</label>
+        <textarea class="form-control" id="msg" name="" cols="50" rows="5"></textarea>
+      </div>
+      <!--checkbox y radio-->
+      <h4>checkbox y radio en bootstrap</h4>
+      <p>checkbox</p>
+      <div class="form-check">
+        <input class="form-check-input" id="ch1" type="checkbox" name="ch1">
+        <label class="form-check-label" for="ch1">opcion1</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" id="ch2" type="checkbox" name="ch2">
+        <label class="form-check-label" for="ch1">opcion2</label>
+      </div><br>
+      <p>radio</p>
+      <div class="form-check">
+        <input class="form-check-input" id="ch1" type="radio" name="ch1">
+        <label class="form-check-label" for="ch1">opcion1</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" id="ch2" type="radio" name="ch1">
+        <label class="form-check-label" for="ch1">opcion2</label>
+      </div><br>
+      <p>checkbox alineados                </p>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" id="ch1" type="checkbox" name="ch1">
+        <label class="form-check-label" for="ch1">opcion1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" id="ch2" type="checkbox" name="ch2">
+        <label class="form-check-label" for="ch1">opcion2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" id="ch3" type="checkbox" name="ch3">
+        <label class="form-check-label" for="ch1">opcion3</label>
+      </div>
+      <!-- select-->
+      <p>select simple</p>
+      <div class="form-group">
+        <label for="sel1">Seleccionar un elemento</label>
+        <select class="form-control" name="sel1">
+          <option value="op1">opcion1</option>
+          <option value="op2">opcion2</option>
+        </select>
+      </div><br>
+      <p>select multiple</p>
+      <div class="form-group">
+        <label for="sel1">Seleccionar varios elementos</label>
+        <select class="form-control" multiple name="sel1">
+          <option value="op1">opcion1</option>
+          <option value="op2">opcion2</option>
+          <option value="op3">opcion3</option>
+          <option value="op4">opcion4</option>
+        </select>
+      </div>
+      <!--Form bootstrap en columna-->
+      <hr>
+      <hr>
+      <div class="row justify-content-center ddd">
+        <div class="col-6"> 
+          <h4>formulario centrado en un row</h4>
+          <form action="#">
+            <div class="form-group">
+              <label for="nombre">nombre</label>
+              <input class="form-control" id="nombre" type="text" name="nombre">
+            </div>
+            <div class="form-group">
+              <label for="pass">contraseña</label>
+              <input class="form-control" id="pass" type="password" name="pass">
+            </div>
+            <button class="btn btn-primary" type="submit">enviar</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <hr>
+    </form>
+  </div>
+</body>

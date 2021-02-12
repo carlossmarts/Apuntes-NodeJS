@@ -1,0 +1,44 @@
+extends ../template/template
+block content
+    body          
+        h2 Listas
+
+        hr
+
+        .container
+            ul.list-group
+                li.list-group-item elemento 1
+                li.list-group-item elemento 2
+
+            hr
+
+            ul.list-group
+                a.list-group-item.list-group-item-primary(href="#") enlace 1
+                a.list-group-item.list-group-item-secondary(href="#") enlace 2
+                a.list-group-item.list-group-item-success(href="#") enlace 3
+                a.list-group-item.list-group-item-danger(href="#") enlace 4
+                a.list-group-item.list-group-item-warning(href="#") enlace 5
+                a.list-group-item.list-group-item-info(href="#") enlace 6
+                a.list-group-item.list-group-item-light(href="#") enlace 7
+                a.list-group-item.list-group-item-dark(href="#") enlace 8
+
+            hr
+
+            ol.breadcrumb
+                li.breadcrumb-item inicio
+                li.breadcrumb-item categoria
+                li.breadcrumb-item subcategoría
+                li.breadcrumb-item.active Artículo
+
+                
+
+
+
+        script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+
+
+
+
+

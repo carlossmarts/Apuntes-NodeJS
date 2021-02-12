@@ -1,0 +1,58 @@
+doctype
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        div(style="padding: 30px; background-color: #ddd")
+            h2 Formulario html
+            form(action="#")
+                h4 inputs
+                p 
+                | nombre: 
+                input#nombre(type="text", name="nombre")
+                p
+                | contraseña: 
+                input#pass(type="password", name="pass")
+                br
+                br
+                button ingresar
+              
+
+                h4 textarea
+                p mensaje
+                textarea#msg(name="msg", cols="50", rows="5")
+
+                h4 ceckbox y radio en html
+                p checkbox
+                    br
+                    input#ch1(type="checkbox" name="ch1")
+                    |  opcion 1
+                    br
+                    input#ch2(type="checkbox" name="ch2")
+                    |  opcion 2
+                p radio
+                    br
+                    input#rad1(type="radio" name="g1")
+                    |  opcion 1
+                    br
+                    input#rad2(type="radio" name="g1")
+                    |  opcion 2
+
+                h4 select
+                p seleccion simple
+                select#sel(name="sel")
+                    option(value="op1") opcion 1
+                    option(value="op2") opcion 2
+
+                p seleccion multiple
+                select#sel(multiple name="sel")
+                    option(value="op1") opcion 1
+                    option(value="op2") opcion 2
+                    option(value="op3") opcion 3
+                    option(value="op4") opcion 4
+
+
+
+

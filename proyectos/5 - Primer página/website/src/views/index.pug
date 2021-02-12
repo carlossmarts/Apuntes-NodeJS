@@ -1,0 +1,22 @@
+extends ./template/template
+append content
+    include partials/nav.pug
+    
+    //imagen
+    div.container
+        .row.text-center
+            .col
+                img.animate__animated.animate__fadeIn(src="/img/huerta.jpg", alt="", style="padding:50px 0px")
+    
+    //seccion about
+    div#about.container-fluid
+        div.row.bgpurpura.text-center.p-4.align-items-center.justify-content-center
+            div.col-lg-2.col-sm-4
+                i.fab.fa-instagram.fa-5x
+            div.col-lg-6.col-sm-8
+                div.row.align-items-center.justify-content-center
+                    h4 la huerta de la irma
+                div.row.align-items-center.justify-content-center
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti iste dicta nulla totam a natus pariatur quas, eius, veritatis mollitia placeat animi adipisci saepe, labore illum! Id, molestias placeat.
+
+

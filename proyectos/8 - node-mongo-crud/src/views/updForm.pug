@@ -1,0 +1,15 @@
+extends ./template/template
+prepend content
+    
+    .row.justify-content-center
+        //formulario
+        .col-md-6.mb-5.col-sm-8
+            .card
+                .card-body
+                    form(action="/update", method="POST")
+                        input(type="hidden", name="_id" value= ""+ task._id)
+                        .form-group
+                            input.form-control(type="text" name="title" value= `${task.title}`)
+                        .form-group 
+                            textarea.form-control(name="description" cols="80")= `${task.description}`
+                        button.btn.btn-primary.btn-block(type="submit") Guardar

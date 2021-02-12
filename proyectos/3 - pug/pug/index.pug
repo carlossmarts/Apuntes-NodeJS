@@ -1,0 +1,13 @@
+extends ../templates/template.pug
+
+
+block content 
+    include ../partials/data.pug
+    include ../mixins/listar
+    .container.text-center        
+        ul
+            +listar(personas)
+
+
+
+

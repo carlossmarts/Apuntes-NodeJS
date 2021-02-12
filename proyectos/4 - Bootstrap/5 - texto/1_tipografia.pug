@@ -1,0 +1,89 @@
+extends ../template/template
+block content
+    .container
+        h6.h1 h6 class h1
+        h5.h2 h5 class h2
+        h4.h3 h4 class h3
+        h3.h4 h3 class h4
+        h2.h5 h2 class h5
+        h1.h6 h1 class h6
+        p.h1 p class h1
+        br
+        br
+
+        h1 h1 común
+        h1.display-1 display 1
+        h1.display-2 display 2
+        h1.display-3 display 3
+        h1.display-4 display 4
+        
+        br
+        br
+
+        p texto sencillo
+        p.lead texto con clase lead
+        p texto con parte del mismo
+            span.text-muted  muteado
+        p.font-weight-bold texto en negrita
+        p.font-italic texto en cursiva
+        p.text-uppercase mayúsculas
+        p.text-lowercase MINUSCULAS
+        p.text-capitalize primeras letras en mayúsculas
+
+
+        //alineacion
+        h4 texto justificado
+        p.text-justify Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ratione vero illo esse a amet. Aut repellendus necessitatibus minima dolor, distinctio laboriosam nihil amet tenetur minus at earum placeat quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dignissimos eveniet reprehenderit qui quasi enim nostrum cum porro earum veritatis vel, commodi eum, odit minima ab inventore ex voluptas. Eaque.
+        br
+
+        h4 alineaciones horizontales fijas
+        p.text-left texto a izquierda
+        p.text-center texto centrado
+        p.text-right texto a la derecha    
+        br
+
+        h4 alineaciones verticales   
+        p         
+        span.align-baseline  texto
+        span.align-top  texto
+        span.align-bottom  texto
+        span.align-middle  texto
+        span.align-text-top  texto
+        span.align-text-bottom  texto
+        br
+        br
+
+        //INLINE y BLOCK
+        h3.bbb encabezado tipo bloque
+        h3.ccc.d-inline encabezado en linea 1
+        h4.ddd.d-inline encabezado en linea 2
+        br
+        span.bbb texto sencillo en linea
+        span.ccc otro texto en linea
+        span.ddd.d-block texto en tipo bloque
+        br
+        .d-inline-block.ccc
+            h4 div en linea
+            p con propiedades de bloque                
+
+        br
+        br
+
+        //ancho y alto
+        h4 ancho
+        div
+            .p-3.w-25.aaa ancho 25%
+            .p-3.w-50.bbb ancho 50%
+            .p-3.w-75.ccc ancho 75%
+            .p-3.w-100.ddd ancho 100%
+
+        br
+
+        h4 alto
+        .row.justify-content-around.bg-light(style="height: 200px")
+            .d-inline-block.h-25.aaa.p-4 alto 25%
+            .d-inline-block.h-50.bbb.p-4 alto 50%
+            .d-inline-block.h-75.ccc.p-4 alto 75%
+            .d-inline-block.h-100.ddd.p-4 alto 100%
+        br
+        br

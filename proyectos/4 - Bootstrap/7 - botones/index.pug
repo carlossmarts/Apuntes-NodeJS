@@ -1,0 +1,116 @@
+extends ../template/template
+
+block content
+    body
+        .m-3
+            button.btn boton
+            br
+            button.btn.btn-primary boton
+            button.btn.btn-secondary boton
+            button.btn.btn-success boton
+            button.btn.btn-info boton
+            button.btn.btn-warning boton
+            button.btn.btn-danger boton
+            button.btn.btn-light boton
+            button.btn.btn-dark boton
+            button.btn.btn-link boton
+
+            hr
+
+            a.btn.btn-primary(href="#") IR A
+            button.btn.btn-success(type="submit") ENVIAR
+            input.btn.btn-secondary(type="button" value="ENVIAR")
+            
+            hr
+
+            button.btn.btn-outline-primary boton
+            button.btn.btn-outline-secondary boton
+            button.btn.btn-outline-success boton
+            button.btn.btn-outline-info boton
+            button.btn.btn-outline-warning boton
+            button.btn.btn-outline-danger boton
+            button.btn.btn-outline-light boton
+            button.btn.btn-outline-dark boton
+            button.btn.btn-outline-link boton
+
+            hr
+
+            button.btn.btn-primary.btn-lg grande
+            button.btn.btn-primary normal
+            button.btn.btn-primary.btn-sm chico
+            br
+            br
+            button.btn.btn-primary.btn-block boton en bloque
+
+            hr
+              
+            button.btn.btn-primary.btn-lg 
+                i.fa.fa-user
+                |  login
+
+            hr
+
+            button.btn.btn-dark.active boton
+            button.btn.btn-primary.disabled boton
+            button.btn.btn-primary(data-toggle="button") boton
+
+            hr
+
+            br
+            br
+            br
+            br
+            .dropdown
+                button.btn.btn-primary.dropdown-toggle(data-toggle="dropdown") MENU
+                .dropdown-menu
+                    a.dropdown-item(href="#") UNO
+                    a.dropdown-item(href="#") DOS
+                    a.dropdown-item(href="#") TRES
+            
+            hr
+            .btn-group
+                button.btn.btn-success uno
+                button.btn.btn-success dos
+                button.btn.btn-success tres
+            hr
+            .btn-group-vertical
+                button.btn.btn-success uno
+                button.btn.btn-success dos
+                button.btn.btn-success tres
+            hr
+            .btn-group
+                button.btn.btn-success boton
+                button.btn.btn-success.dropdown-toggle.dropdown-toggle-split(data-toggle="dropdown") menu
+                .dropdown-menu
+                    a.dropdown-item(href="#") UNO
+                    a.dropdown-item(href="#") DOS
+                    a.dropdown-item(href="#") TRES
+
+            hr
+
+            .btn-toolbar(role="toolbar")
+                button.btn.btn-success uno
+                button.btn.btn-success dos
+                button.btn.btn-success tres
+
+            hr
+
+            .btn-toolbar(role="toolbar")
+                .btn-group.mr-2
+                    button.btn.btn-primary 1
+                    button.btn.btn-primary 2
+                    button.btn.btn-primary 3
+                
+                .btn-group.mr-2
+                    button.btn.btn-primary 4
+                    button.btn.btn-primary 5
+                
+                button.btn.btn-primary 6
+              
+            br
+            br
+            br
+            br
+        script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")

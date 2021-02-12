@@ -1,0 +1,55 @@
+extends ../template/template
+block content
+    body
+        nav.navbar.navbar-expand-md.navbar-light.bg-light
+            .container
+                a.navbar-brand(href="#") App
+                button.navbar-toggler(type="button" data-toggle="collapse" data-target="#nav1") 
+                    span.navbar-toggler-icon
+
+                #nav1.navbar-collapse.collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item
+                            a.nav-link(href="") home
+                        li.nav-item
+                            a.nav-link(href="") about
+                        li.nav-item
+                            a.nav-link(href="") contact
+                    form.form-inline
+                        input.form-control(type="text" placeholder="buscar")
+                        button.btn.btn-outline-success(type="button") buscar
+
+
+        hr
+        hr
+
+        nav.navbar.navbar-expand-md.navbar-light.bg-light
+            .container
+                a.navbar-brand(href="#") App
+                button.navbar-toggler(type="button" data-toggle="collapse" data-target="#nav2") 
+                    span.navbar-toggler-icon
+
+                #nav2.navbar-collapse.collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item
+                            a.nav-link(href="") home
+                        li.nav-item
+                            a.nav-link(href="") about
+                        li.nav-item
+                            a.nav-link(href="") contact
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(href="#" data-toggle="dropdown") Item padre
+                            .dropdown-menu
+                                a.dropdown-item(href="#") link1
+                                a.dropdown-item(href="#") link2
+                                a.dropdown-item(href="#") link3
+
+
+
+
+        script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+
+
+

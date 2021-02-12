@@ -1,0 +1,39 @@
+extends ../template/template
+
+block content
+    body.ddd
+        .container
+            h3 Alineamiento vertical
+            hr
+            hr
+            h4 arriba (start)
+            .row.blue.align-items-start(style="height: 75px;")
+                .col.aaa columna 1
+                .col.bbb columna 2
+                .col.ccc columna 3
+
+            hr
+            h4 centro (center)
+            .row.blue.align-items-center(style="height: 75px;")
+                .col.aaa columna 1
+                .col.bbb columna 2
+                .col.ccc columna 3
+
+            hr
+            h4 abajo (end)
+            .row.blue.align-items-end(style="height: 75px;")
+                .col.aaa columna 1
+                .col.bbb columna 2
+                .col.ccc columna 3
+
+            hr
+            hr
+            h3 alineación propia
+            .row.blue(style="height: 75px;")
+                .col.aaa.align-self-start columna 1
+                .col.bbb.align-self-center columna 2
+                .col.ccc.align-self-end columna 3
+
+            br
+            br
+            

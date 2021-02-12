@@ -1,0 +1,14 @@
+extends ./template/template
+prepend content
+    
+    .row.justify-content-center
+        //formulario
+        .col-md-6.mb-5.col-sm-8
+            .card
+                .card-body
+                    form(action="/create" method="POST")
+                        .form-group
+                            input.form-control(type="text" name="title" placeholder="Insertar título")
+                        .form-group 
+                            textarea.form-control(name="description" cols="80" placeholder="insertar descripcion")
+                        button.btn.btn-primary.btn-block(type="submit") agregar

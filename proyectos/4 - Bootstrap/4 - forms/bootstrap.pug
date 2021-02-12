@@ -1,0 +1,89 @@
+extends ../template/template
+
+block content
+    body
+        .container.ddd
+            h4 formulario bootstrap
+            form(action="#")
+                h4 inputs
+                .form-group
+                    label(for="nombre") nombre
+                    input#nombre.form-control(type="text" name="nombre")
+                .form-group
+                    label(for="pass") contraseña
+                    input#pass.form-control(type="password", name="pass")
+                button.btn.btn-primary(type="submit") ingresar
+
+            
+                //textarea
+                h4 textarea bootstrap
+                
+                .form-group
+                    label(for="msg") deje su mensaje
+                    textarea#msg.form-control(name="", cols="50", rows="5")
+
+                //checkbox y radio
+                h4 checkbox y radio en bootstrap
+                p checkbox
+                .form-check
+                    input#ch1.form-check-input(type="checkbox" name="ch1")
+                    label.form-check-label(for="ch1") opcion1
+                .form-check
+                    input#ch2.form-check-input(type="checkbox" name="ch2")
+                    label.form-check-label(for="ch1") opcion2
+                br
+                p radio
+                .form-check
+                    input#ch1.form-check-input(type="radio" name="ch1")
+                    label.form-check-label(for="ch1") opcion1
+                .form-check
+                    input#ch2.form-check-input(type="radio" name="ch1")
+                    label.form-check-label(for="ch1") opcion2
+                br
+                p checkbox alineados                
+                .form-check.form-check-inline
+                    input#ch1.form-check-input(type="checkbox" name="ch1")
+                    label.form-check-label(for="ch1") opcion1
+                .form-check.form-check-inline
+                    input#ch2.form-check-input(type="checkbox" name="ch2")
+                    label.form-check-label(for="ch1") opcion2
+                .form-check.form-check-inline
+                    input#ch3.form-check-input(type="checkbox" name="ch3")
+                    label.form-check-label(for="ch1") opcion3
+
+                // select
+                p select simple
+                .form-group
+                    label(for="sel1") Seleccionar un elemento
+                    select.form-control(name="sel1")
+                        option(value="op1") opcion1
+                        option(value="op2") opcion2
+                br
+                p select multiple
+                .form-group
+                    label(for="sel1") Seleccionar varios elementos
+                    select.form-control(multiple name="sel1")
+                        option(value="op1") opcion1
+                        option(value="op2") opcion2
+                        option(value="op3") opcion3
+                        option(value="op4") opcion4
+
+    
+                //Form bootstrap en columna
+                hr
+                hr
+                .row.justify-content-center.ddd
+                    .col-6  
+                        h4 formulario centrado en un row
+                        form(action="#")
+                            .form-group
+                                label(for="nombre") nombre
+                                input#nombre.form-control(type="text" name="nombre")
+                            .form-group
+                                label(for="pass") contraseña
+                                input#pass.form-control(type="password", name="pass")
+                            button.btn.btn-primary(type="submit") enviar
+                hr
+                hr
+        
+

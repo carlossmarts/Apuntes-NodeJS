@@ -1,0 +1,51 @@
+.blue{
+    background-color: steelblue;
+}
+.aaa{
+    background-color: #aaa;
+}
+.bbb{
+    background-color: #bbb;
+}
+.ccc{
+    background-color: #ccc;
+}
+.ddd{
+    background-color: #ddd;
+}
+
+/* media queries*/
+/* ancho máximo */
+/* body{
+    background-color: forestgreen;
+} */
+/* 
+@media screen and (max-width: 1200px){
+    body{
+        background-color: darkslategrey;
+    }
+}
+
+@media screen and (max-width: 992px){
+    body{
+        background-color: darkolivegreen;
+    }
+}
+
+@media screen and (max-width: 720px){
+    body{
+        background-color: darkcyan;
+    }
+}
+
+@media screen and (max-width: 540px){
+    body{
+        background-color: darkgreen;
+    }
+}
+ */
+
+
+
+
+

@@ -1,0 +1,22 @@
+extends ./template/template
+append content
+    //navegación
+    include partials/nav.pug
+
+    //Formulario de contacto
+    .container.p-5
+        .row.justify-content-center
+            .col-sm-8.col-md-6.col-lg-4
+                .card.cardborder.animate__animated.animate__flipInY
+                    .card-header.bg-primary.text-dark.text-center
+                        h3 contactanos
+
+                    .card-body.bglila
+                        form(action="#")
+                            .form-group
+                                input.form-control(type="text" placeholder="E-mail")
+                            .form-group
+                                textarea#msg.form-control(cols="30", rows="10", placeholder="Mensaje")
+                            .form-group
+                                button.btn.btn-primary.btn-block Enviar
+

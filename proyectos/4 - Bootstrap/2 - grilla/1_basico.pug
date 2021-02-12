@@ -1,0 +1,40 @@
+extends ../template/template.pug
+
+block content
+    body
+        br
+        h3 Colapso de columnas
+        hr
+        .container
+            h4 Nunca colapsa
+            .row
+                .col-4.aaa columna 1
+                .col-2.bbb columna 2
+                .col-6.ccc columna 3
+            hr
+            h4 colapsa en 1200 px
+            .row
+                .col-xl-4.aaa columna 1
+                .col-xl-2.bbb columna 2
+                .col-xl-6.ccc columna 3
+            hr
+            h4 colapsa en 992 px
+            .row
+                .col-lg-4.aaa columna 1
+                .col-lg-2.bbb columna 2
+                .col-lg-6.ccc columna 3
+            hr
+            h4 colapsa en 720 px
+            .row
+                .col-md-4.aaa columna 1
+                .col-md-2.bbb columna 2
+                .col-md-6.ccc columna 3
+            hr
+            h4 colapsa en 540 px
+            .row
+                .col-sm-4.aaa columna 1
+                .col-sm-2.bbb columna 2
+                .col-sm-6.ccc columna 3
+
+
+
