@@ -2,17 +2,40 @@ extends ../template/template
 block content
     body
         .container.mt-5
-            #modal1.modal(tabindex="-1")
-                .modal-dialog
+
+            button.btn.btn-primary(type="button" data-toggle="modal" data-target="#modal1") Mostrar modal
+
+            #modal1.modal.fade(tabindex="-1" role="dialog" aria-labelledby="ejemplo")
+                .modal-dialog(role="document")
                     .modal-content
                         .modal-header 
-                            button.close(data-dismiss="modal") &times;
-                        .modal-body Cuerpo del modal
+                            h5.modal-title#ejemploModalLabel Contactanos
+                            button.close(type="button" data-dismiss="modal" aria-label="Close") &times;
+
+                        .modal-body
+                            form(action="#")
+                                .form-group
+                                    input.form-control(type="text" placeholder="E-mail")
+                                .form-group
+                                    textarea#msg.form-control(cols="30" rows="10" placeholder="Mensaje")
+
                         .modal-footer
-                            button.btn.btn-primary guardar cambios
+                            button.btn.btn-primary Enviar
                             button.btn.btn-danger(data-dismiss="modal") cancelar
-            button.btn.btn-primary(type="button" data-toggle="modal" data-target="#modal1") Mostrar modal
+            
+            
 
         script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
         script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+
+
+        //- #modal1.modal.fade(tabindex="-1")
+        //-         .modal-dialog
+        //-             .modal-content
+        //-                 .modal-header 
+        //-                     button.close(data-dismiss="modal") &times;
+        //-                 .modal-body Cuerpo del modal
+        //-                 .modal-footer
+        //-                     button.btn.btn-primary guardar cambios
+        //-                     button.btn.btn-danger(data-dismiss="modal") cancelar
