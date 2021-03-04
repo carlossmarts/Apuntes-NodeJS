@@ -1,0 +1,14 @@
+
+#addModal.modal.fade(tabindex="-1")
+    .modal-dialog 
+        .modal-content
+            .modal-header 
+                h5.modal-title agregar 
+                button.close(type="button" data-dismiss="modal") &times;
+            .modal-body
+                form(action="/create" method="POST")
+                    .form-group
+                        input.form-control(type="text" name="title" placeholder="Insertar título")
+                    .form-group 
+                        textarea.form-control(name="description" cols="80" placeholder="insertar descripcion")
+                    button.btn.btn-primary.btn-block(type="submit") agregar

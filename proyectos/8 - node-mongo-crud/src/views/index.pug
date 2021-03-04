@@ -1,9 +1,9 @@
 extends ./template/template
 prepend content
-    .container
+    .container.text-center
         .row
             .col-md-8.offset-2.text-info
-                a(href='/add')
+                a(href='/add' type="button" data-toggle="modal" data-target="#addModal")
                     i.fas.fa-plus-circle   Nueva tarea
         .row
             .col-md-8.offset-2
@@ -24,8 +24,14 @@ prepend content
                                 td= task.description
                                 td
                                     .row.justify-content-around
-                                        a.btn.btn-sm(href="/done/" + task._id class= !task.done? "btn-dark" : "btn-success") Hecho
-                                        a.btn.btn-danger.btn-sm(href="/delete/"+task._id) Eliminar
-                                        a.btn.btn-info.btn-sm(href="/update/"+task._id) Modificar
+                                        a.btn.btn-sm.respButton(href="/done/" + task._id class= !task.done? "btn-dark" : "btn-success") Hecho
+                                        a.btn.btn-danger.btn-sm.respButton(href="/delete/"+task._id) Eliminar
+                                        a.btn.btn-info.btn-sm.respButton(type="button" data-toggle="modal" data-target="#updModal") Modificar
+                                        include ./partials/updModal
+    include ./partials/addModal
+    
+
+                    
+
 
                 

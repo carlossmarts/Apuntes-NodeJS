@@ -1,0 +1,14 @@
+#updModal.modal.fade(tabindex="-1")
+    .modal-dialog 
+        .modal-content
+            .modal-header 
+                h5.modal-title actualizar 
+                button.close(type="button" data-dismiss="modal") &times;
+            .modal-body
+                form(action="/update" method="POST")
+                    input(type="hidden" name="_id" value= ""+task._id)
+                    .form-group
+                        input.form-control(type="text" name="title" value= `${task.title}`)
+                    .form-group 
+                        textarea.form-control(name="description" cols="80")= `${task.description}`
+                    button.btn.btn-primary.btn-block(type="submit") Guardar cambios
